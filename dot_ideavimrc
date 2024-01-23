@@ -1,0 +1,158 @@
+imap jk <Esc>
+imap kj <Esc>
+let mapleader=" "
+" 多光标插件
+set multicursor
+" 环绕模拟
+set surround
+
+" Vim 的默认寄存器和系统剪贴板共享
+set clipboard+=unnamed
+set history=100000
+'
+:set keep-english-in-normal
+:set keep-english-in-normal-and-restore-in-insert
+nmap P "0p
+" select模式下复制
+if has("clipboard")
+    vnoremap <C-C> "+y
+endif
+" 映射到idea快捷键
+" 弹出输入框，可以跳到指定类
+nmap <Space>fc :action GotoClass<CR>
+" 弹出输入框，跳转到指定操作
+nmap <Space>fa :action GotoAction<CR>
+" 跳转到指定的文件
+nmap <Space>ff :action GotoFile<CR>
+" 查找使用
+nmap <Space>fu :action FindUsages<CR>
+" 查找项目
+nmap <Space>fp :action ManageRecentProjects<CR>
+
+"单元测试相关"
+"跳转到测
+nmap <Space>tt :action GotoTest<CR>
+
+"跳转相关
+nmap <Space>th :action TypeHierarchy<CR>
+"跳转目录来源
+map <A-A> <Action>(SelectInProjectView)
+sethandler <A-A> a:vim
+"目录控制
+"nmap <C-J> <Action>(Tree-selectNext)
+"nmap <C-K> <Action>(Tree-selectPrevious)
+"nmap <C-H> <Action>(Tree-selectParent)
+"nmap <C-L> <Action>(Tree-selectChild)
+
+"文本编辑相关"
+" 跳转到实现
+nmap <Space>ei :action GotoImplementation<CR>
+" 跳转到方法的声明
+nmap <Space>em :action GotoSuperMethod<CR>
+" 显示使用
+nmap <Space>su :action ShowUsages<CR>
+nmap <Space>el :action MoveTabRight<CR>
+
+" 快速复制行
+nmap yp yyp
+"控制
+"map <C-J> <Action>(EditorDown)
+"map <C-K> <Action>(EditorUp)
+"map <C-H> <Action>(EditorLeft)
+"map <C-L> <Action>(EditorRight)
+map <A-J> <Action>(MethodDown)
+map <A-K> <Action>(MethodUp)
+
+map <A-S-J> <Action>(MoveLineDown)
+map <A-S-K> <Action>(MoveLineUp)
+setHandler <A-S-J> a:vim
+setHandler <A-S-K> a:vim
+"向前向后"
+map <C-O> <Action>(Back)
+map <C-I> <Action>(Forward)
+"注释
+map <C-/> <Action>(CommentByLineComment)
+map <C-S-/> <Action>(CommentByBlockComment)
+"获取implement
+nmap <A-I> <Action>(ImplementMethods)
+"获取override
+nmap <A-O> <Action>(OverrideMethods)
+
+"编辑查看相关
+nmap <A-C> <Action>(VcsShowCurrentChangeMarker)
+setHandler <A-C> a:vim
+
+"git相关
+"提交
+nmap <Space>gc :action CheckinProject<CR>
+"git历史
+nmap <Space>gh :action ActivateVersionControlToolWindow<CR>
+"git push
+nmap <Space>gp :action Vcs.Push<CR>
+"git push
+nmap <Space>gb :action Git.Branches<CR>
+"git pull
+nmap <Space>gl :action Vcs.UpdateProject<CR>
+"git fetch
+nmap <Space>gf <Action>(Git.Fetch)
+"git merge
+nmap <Space>gm <Action>(Git.Merge)
+"git Annotate
+nmap <Space>ga <Action>(Annotate)
+
+
+"格式化
+:map <leader>fm <Action>(ReformatCode)
+:map <leader>fi <Action>(OptimizeImports)
+
+" gh=go head, 映射vim中的^
+nmap gh ^
+" gl=go last，映射vim中的$
+nmap gl $
+
+set ideajoin
+
+"拦截器"
+sethandler <C-2> a:ide
+sethandler <C-S-2> a:ide
+sethandler <C-6> a:ide
+sethandler <C-S-6> a:ide
+sethandler <C-A> a:vim
+sethandler <C-B> a:ide
+sethandler <C-C> a:vim
+sethandler <C-D> a:vim
+sethandler <C-E> a:ide
+sethandler <C-F> a:ide
+sethandler <C-G> a:vim
+sethandler <C-M> a:ide
+sethandler <C-N> a:ide
+sethandler <C-P> a:ide
+sethandler <C-Q> a:ide
+sethandler <C-R> a:ide
+sethandler <C-S> a:vim
+sethandler <C-T> a:vim
+sethandler <C-U> a:vim
+sethandler <C-V> a:vim
+sethandler <C-W> a:vim
+sethandler <C-X> a:vim
+sethandler <C-Y> a:vim
+sethandler <C-[> a:vim
+sethandler <C-]> a:vim
+"sethandler <C-/> a:vim
+"sethandler <C-S-/> a:vim
+sethandler <C-\> a:ide
+"编辑
+setHandler <C-J> a:ide
+setHandler <C-K> a:ide
+setHandler <C-H> a:ide
+setHandler <C-L> a:ide
+setHandler <A-J> a:vim
+setHandler <A-K> a:vim
+setHandler <C-O> a:vim
+setHandler <C-I> a:vim
+
+"test
+"需要自行添加idea快捷键
+"上下左右<C-H>...
+"tab切换<A-H><A-L>
+"光标复选<C-S-J>
