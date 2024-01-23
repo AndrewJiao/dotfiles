@@ -151,7 +151,6 @@ setHandler <A-K> a:vim
 setHandler <C-O> a:vim
 setHandler <C-I> a:vim
 
-"test
 "需要自行添加idea快捷键
 "上下左右<C-H>...
 "tab切换<A-H><A-L>
