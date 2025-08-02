@@ -17,8 +17,9 @@ local formatter = require("plugin.formatter")
 -- treesitter
 local treesitter = require("plugin.treesitter")
 -- 主题
-
 local theme = require("theme")
+-- 行间移动
+local line_move = require("plugin.vim_move")
 
 
 vim.g.lazyloader_ssh_cmd = "ssh -i /Users/Andrew/.ssh/id_rsa.pub git@github.com"
@@ -50,5 +51,5 @@ require("lazy").setup({
     bufferline,
     treesitter,
     undo_tree,
-    
+    line_move,
 })
