@@ -12,6 +12,8 @@ local telescope = {
             map('n', '<leader>fg', builtin.live_grep, opts)
             map('n', '<leader>fb', builtin.buffers, opts)
             map('n', '<leader>fh', builtin.oldfiles, opts)
+            map('n', '<C-e>', builtin.oldfiles, opts)
+            map('n', '<C-E>', builtin.oldfiles, opts)
             map('n', '<leader>gb', builtin.git_branches, opts)
             map('n', '<leader>gh', builtin.git_bcommits, opts)
 

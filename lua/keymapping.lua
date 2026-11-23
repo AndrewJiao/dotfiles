@@ -46,18 +46,9 @@ map('i', '<C-h>','<Left>',  opts)
 map('i', '<C-K>','<Up>',  opts)  
 map('i', '<C-J>','<Down>',  opts)  
 map('i', '<C-L>','<Right>',  opts)  
-map('i', '<C-H>','<Left>',  opts)  
-
-
-
+map('i', '<C-H>','<Left>',  opts)
 
 
 
 return {opts = opts, map = map}
-
-
-    
-
-
-
 
