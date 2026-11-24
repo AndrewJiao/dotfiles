@@ -33,6 +33,10 @@ map('n', '<C-k>','<Up>',  opts)
 map('n', '<C-j>','<Down>',  opts)  
 map('n', '<C-K>','<Up>',  opts)  
 map('n', '<C-J>','<Down>',  opts)  
+map('n', '<C-h>','<Left>',  opts)  
+map('n', '<C-l>','<Right>',  opts)  
+map('n', '<C-H>','<Left>',  opts)  
+map('n', '<C-L>','<Right>',  opts)  
 --   
 -- 在Insert模式下映射上下键  
 map('i', '<C-k>','<Up>',  opts)  
@@ -42,7 +46,9 @@ map('i', '<C-h>','<Left>',  opts)
 map('i', '<C-K>','<Up>',  opts)  
 map('i', '<C-J>','<Down>',  opts)  
 map('i', '<C-L>','<Right>',  opts)  
-map('i', '<C-H>','<Left>',  opts)  
+map('i', '<C-H>','<Left>',  opts)
+
+
 
 return {opts = opts, map = map}
-    
+

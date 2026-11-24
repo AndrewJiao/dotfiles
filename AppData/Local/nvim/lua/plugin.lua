@@ -17,8 +17,18 @@ local formatter = require("plugin.formatter")
 -- treesitter
 local treesitter = require("plugin.treesitter")
 -- 主题
-
 local theme = require("theme")
+-- 行间移动
+local line_move = require("plugin.vim_move")
+-- 导航标
+local ariline = require("plugin.airline")
+-- buff栏关闭
+local buffer_delete = require("plugin.buffer_delete")
+-- 代码补全
+local cmp = require("plugin.cmp")
+local lsp = require("plugin.lsp")
+
+local which_key = require("plugin.which_key")
 
 
 vim.g.lazyloader_ssh_cmd = "ssh -i /Users/Andrew/.ssh/id_rsa.pub git@github.com"
@@ -50,5 +60,10 @@ require("lazy").setup({
     bufferline,
     treesitter,
     undo_tree,
-    
+    line_move,
+    ariline,
+    buffer_delete,
+    cmp,
+    which_key,
+    lsp,
 })
