@@ -1,0 +1,166 @@
+{
+    "workbench.colorTheme": "Light 2026",
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.surround": true,
+    "vim.history": 10000,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["k", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["P"],
+            "after": ["\"", "0", "p"]
+        },
+        {
+            "before": ["y", "p"],
+            "after": ["y", "y", "p"]
+        },
+        {
+            "before": ["g", "h"],
+            "after": ["^"]
+        },
+        {
+            "before": ["g", "l"],
+            "after": ["$"]
+        },
+        {
+            "before": ["<C-h>"],
+            "after": ["h"]
+        },
+        {
+            "before": ["<C-j>"],
+            "after": ["j"]
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["k"]
+        },
+        {
+            "before": ["<C-l>"],
+            "after": ["l"]
+        },
+        {
+            "before": ["<C-o>"],
+            "commands": ["workbench.action.navigateBack"]
+        },
+        {
+            "before": ["<C-i>"],
+            "commands": ["workbench.action.navigateForward"]
+        },
+        {
+            "before": ["<leader>", "f", "c"],
+            "commands": ["workbench.action.showAllSymbols"]
+        },
+        {
+            "before": ["<leader>", "f", "a"],
+            "commands": ["workbench.action.showCommands"]
+        },
+        {
+            "before": ["<leader>", "f", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<leader>", "f", "u"],
+            "commands": ["editor.action.referenceSearch.trigger"]
+        },
+        {
+            "before": ["<leader>", "f", "p"],
+            "commands": ["workbench.action.openRecent"]
+        },
+        {
+            "before": ["<leader>", "t", "t"],
+            "commands": ["workbench.view.testing"]
+        },
+        {
+            "before": ["<leader>", "t", "h"],
+            "commands": ["editor.action.showTypeHierarchy"]
+        },
+        {
+            "before": ["<leader>", "e", "i"],
+            "commands": ["editor.action.goToImplementation"]
+        },
+        {
+            "before": ["<leader>", "e", "m"],
+            "commands": ["editor.action.goToDeclaration"]
+        },
+        {
+            "before": ["<leader>", "s", "u"],
+            "commands": ["editor.action.referenceSearch.trigger"]
+        },
+        {
+            "before": ["<leader>", "e", "l"],
+            "commands": [
+                {
+                    "command": "moveActiveEditor",
+                    "args": {"to": "right", "by": "tab"}
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "e", ">"],
+            "commands": [
+                {
+                    "command": "moveActiveEditor",
+                    "args": {"to": "right", "by": "group"}
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "e", "<"],
+            "commands": [
+                {
+                    "command": "moveActiveEditor",
+                    "args": {"to": "left", "by": "group"}
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "g", "c"],
+            "commands": ["git.commit"]
+        },
+        {
+            "before": ["<leader>", "g", "h"],
+            "commands": ["workbench.view.scm"]
+        },
+        {
+            "before": ["<leader>", "g", "p"],
+            "commands": ["git.push"]
+        },
+        {
+            "before": ["<leader>", "g", "b"],
+            "commands": ["git.branch"]
+        },
+        {
+            "before": ["<leader>", "g", "l"],
+            "commands": ["git.pull"]
+        },
+        {
+            "before": ["<leader>", "g", "f"],
+            "commands": ["git.fetch"]
+        },
+        {
+            "before": ["<leader>", "g", "m"],
+            "commands": ["git.merge"]
+        },
+        {
+            "before": ["<leader>", "f", "m"],
+            "commands": ["editor.action.formatDocument"]
+        },
+        {
+            "before": ["<leader>", "f", "i"],
+            "commands": ["editor.action.organizeImports"]
+        },
+        {
+            "before": ["<leader>", "c", "c"],
+            "commands": ["workbench.action.chat.open"]
+        }
+    ]
+}

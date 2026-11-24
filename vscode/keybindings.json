@@ -1,0 +1,153 @@
+[
+    {
+        "key": "alt+a",
+        "command": "workbench.action.files.revealActiveFileInWindows",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+shift+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+shift+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+shift+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+shift+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "cursorDownSelect",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "cursorUpSelect",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+shift+/",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+left",
+        "command": "workbench.action.previousEditor",
+        "when": "vim.active && vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+h",
+        "command": "workbench.action.previousEditor",
+        "when": "vim.active && vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+right",
+        "command": "workbench.action.nextEditor",
+        "when": "vim.active && vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.nextEditor",
+        "when": "vim.active && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "editor.action.addSelectionToPreviousFindMatch",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "editor.action.addSelectionToPreviousFindMatch",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.navigateBack",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.navigateForward",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "f3",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+f3",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+ctrl+f3",
+        "command": "workbench.action.closeOtherEditors",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+c",
+        "command": "git.blame.toggleEditorDecoration",
+        "when": "editorTextFocus && vim.mode == 'Normal' && config.git.enabled"
+    },
+    {
+        "key": "alt+i",
+        "command": "editor.action.quickFix",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+o",
+        "command": "editor.action.codeAction",
+        "args": {"kind": "refactor"},
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "list.focusDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "list.focusUp",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "list.collapse",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "alt+insert",
+        "command": "explorer.newFolder",
+        "when": "filesExplorerFocus"
+    }
+]
